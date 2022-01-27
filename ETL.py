@@ -24,9 +24,6 @@ engine
 
 # In[3]:
 
-
-
-
 metadata = MetaData()
 
 # This method instantiates the tables that already 
@@ -38,8 +35,6 @@ inspector = inspect(engine)
 
 # Checked out the columns in the employees table
 inspector.get_columns('customers')
-
-
 
 #Revisé las columnas en la tabla de Customers 
 
@@ -58,7 +53,6 @@ with engine.connect() as con:
         print(row)
         
 con.close()
-
 
 
 # In[5]:
